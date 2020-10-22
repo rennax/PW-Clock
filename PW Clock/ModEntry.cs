@@ -17,12 +17,6 @@ namespace PW_Clock
         static TMP_Text text = null;
         static DateTime currentTime;
 
-        public override void OnApplicationStart()
-        {
-            // Load configuration and overwrite any custom tracks
-
-
-        }
 
         [HarmonyPatch(typeof(Gun), "Fire", new System.Type[0] {})]
         public static class GunMod
